@@ -44,7 +44,7 @@ function Navbar ()  {
           Sign up
         </button>
         {/* ---------MobileNavbar ---- */}
-        <div>
+        
         <img
           onClick={() => setShowMobileIcon(true)}
           src={assets.menu_icon}
@@ -123,7 +123,7 @@ function Navbar ()  {
         </div>
       </div>
     </div>
-    </div>
+    
   );
 };
 
