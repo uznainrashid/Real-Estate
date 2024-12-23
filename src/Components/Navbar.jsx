@@ -109,7 +109,7 @@ function Navbar ()  {
             Contact Us
           </a>
         </ul>
-        <div className="mt-28 text-center">
+        <div className="mt-40 text-center">
           <p className="">
             Copyright © 2024 Real-Estate{" "}
             <a
