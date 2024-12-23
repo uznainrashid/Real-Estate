@@ -44,7 +44,7 @@ function Navbar ()  {
           Sign up
         </button>
         {/* ---------MobileNavbar ---- */}
-        
+        <div>
         <img
           onClick={() => setShowMobileIcon(true)}
           src={assets.menu_icon}
@@ -109,7 +109,7 @@ function Navbar ()  {
             Contact Us
           </a>
         </ul>
-        <div className="mt-40 text-center">
+        <div className="mb-2 text-center">
           <p className="">
             Copyright © 2024 Real-Estate{" "}
             <a
@@ -122,6 +122,7 @@ function Navbar ()  {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
