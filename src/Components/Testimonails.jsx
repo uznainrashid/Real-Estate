@@ -1,9 +1,14 @@
 import React from "react";
 import { assets, testimonialsData } from "../assets/assets";
+import { motion } from "framer-motion";
+
 
 function Testimonails() {
   return (
-    <div className="container mx-auto py-4 pt-20 md:px-20 lg:px-32 w-full overflow-hidden" id="Testimonails">
+    <motion.div
+    initial={{ opacity: 0, x: 200 }}
+    transition={{ duration: 1.7 }}
+    whileInView={{ opacity: 1, x: 0 }} className="container mx-auto py-4 pt-20 md:px-20 lg:px-32 w-full overflow-hidden" id="Testimonails">
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
         Customer{" "}
         <span className="underline underline-offset-4 font-light decoration-1 under">
@@ -30,7 +35,7 @@ function Testimonails() {
 
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

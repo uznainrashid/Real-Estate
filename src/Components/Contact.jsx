@@ -1,5 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 function Contact() {
   const [result, setResult] = React.useState("");
@@ -29,7 +30,10 @@ function Contact() {
     }
   };
   return (
-    <div
+    <motion.div
+    initial={{ opacity: 0, y: -100 }}
+    transition={{ duration: 1.5 }}
+    whileInView={{ opacity: 1, y: 0 }}
       className="container mx-auto py-4 pt-20 md:px-20 lg:px-32 w-full overflow-hidden"
       id="Contact"
     >
@@ -83,7 +87,7 @@ function Contact() {
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 }
 
