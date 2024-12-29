@@ -32,7 +32,7 @@ function Projects() {
   
   return (
     <motion.div
-    initial={{ opacity: 0, x: -100 }}
+    initial={{ opacity: 0, x: 100 }}
     transition={{ duration: 1.5 }}
     whileInView={{ opacity: 1, x: 0 }}
       className="container mx-auto py-4 pt-20 md:px-20 lg:px-32 w-full overflow-hidden"
@@ -74,7 +74,9 @@ function Projects() {
         >
           {projectsData.map((project, index) => (
             <div key={index} className="relative flex-shrink-0 w-full sm:w-1/4">
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
                 src={project.image}
                 alt={project.id}
                 className="w-full h-auto mb-14"

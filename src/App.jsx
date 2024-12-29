@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full  overflow-hidden">
       <ToastContainer />
       <Header/>
       <About/>
